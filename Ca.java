@@ -65,4 +65,13 @@ zero=new JButton("0");
 zero.setBounds(50,500,150,150);
 zero.setFont(new Font("Arial",Font.PLAIN,20));
 jf.add(zero);
+dot=new JButton(".");
+dot.setBounds(250,500,50,50);
+dot.setFont(new Font("Arial",Font.PLAIN,20));
+jf.add(dot);
+clear=new JButton("clear");
+clear.setBounds(400,200,150,50);
+clear.setFont(new Font("Arial",Font.PLAIN,20));
+jf.add(zero);
+
 }
