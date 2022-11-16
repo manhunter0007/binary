@@ -1,0 +1,68 @@
+import java.util.*;
+import java.awt.*;
+import java.awt.event.*;
+import javax.swing.*;
+public class Ca extends JFrame implements ActionListener
+{
+JFrame jf;
+JTextField screen;
+JLabel l;
+float newValue=0,newValue2;
+int flag=0;
+JButton plus,clear,close,minus,div,mul,equal;
+JButton seven,eight,nine,four,five,six,one,two,three,zero,dot;
+public Ca()
+{
+jf=new JFrame();
+jf.setTitle("Calculator");
+jf.setLayout(null);
+jf.setSize(600,700);
+jf.setVisible(true);
+jf.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+screen=new JTextField("");
+screen.setBounds(50,50,500,100);
+jf.add(screen);
+l=new JLabel("");
+l.setBounds(50,20,400,30);
+jf.add(l);
+seven=new JButton("7");
+seven.setBounds(50,200,50,50);
+seven.setFont(new Font("Arial",Font.PLAIN,20));
+jf.add(seven);
+eight=new JButton("8");
+eight.setBounds(150,200,50,50);
+eight.setFont(new Font("Arial",Font.PLAIN,20));
+jf.add(eight);
+nine=new JButton("9");
+nine.setBounds(250,200,50,50);
+nine.setFont(new Font("Arial",Font.PLAIN,20));
+jf.add(nine);
+four=new JButton("4");
+four.setBounds(50,300,50,50);
+four.setFont(new Font("Arial",Font.PLAIN,20));
+jf.add(four);
+five=new JButton("5");
+five.setBounds(150,300,50,50);
+five.setFont(new Font("Arial",Font.PLAIN,20));
+jf.add(five);
+six=new JButton("6");
+six.setBounds(250,300,50,50);
+six.setFont(new Font("Arial",Font.PLAIN,20));
+jf.add(six);
+one=new JButton("1");
+one.setBounds(50,400,50,50);
+one.setFont(new Font("Arial",Font.PLAIN,20));
+jf.add(one);
+two=new JButton("2");
+two.setBounds(150,400,50,50);
+two.setFont(new Font("Arial",Font.PLAIN,20));
+jf.add(two);
+three=new JButton("3");
+three.setBounds(250,400,50,50);
+three.setFont(new Font("Arial",Font.PLAIN,20));
+jf.add(three);
+zero=new JButton("0");
+zero.setBounds(50,500,150,150);
+zero.setFont(new Font("Arial",Font.PLAIN,20));
+jf.add(zero);
+}
